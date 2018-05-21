@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color:#3FEEE6 ;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Home {background-color:#075f6c;}
+#About {background-color:#075f6c;}
+#Contact {background-color:#075f6c;}
+#Register {background-color:#075f6c;}
+
+/*Side nav bar*/
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#075f6c;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color:#f44336;
+}
+.nav{color: #white;
+padding-left: 5px;
+padding-right: 5px;
+}
+#Header{margin-left: 148px;}
+.x{color: #d9d9d9;}
+#image{margin-left: 148px;}
+.books{margin-left:12px;
+margin-right: 12px;
+border:2px solid black;}
+
+body{background:#075f6c;}
+
+
+#bestseller{color: white;
+text-align: center;
+margin-left: 150px;
+background:#555;
+border-radius: 20px; 
+padding: 10px;}
+
+
+/*slide show*/
+ {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slideshow-container{margin-left:25%;
+margin-right: 25%;}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#555;
+   color: white;
+   margin-left: 150px;
+   text-align: center;
+}
+
+/*top nav*/
+.navbarTop {
+  overflow: hidden;
+  background-color: #555;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.navbarTop a {
+  margin-left: 150px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+</style>
+</head>
+<body>
+<div class="navbarTop">
+  <a href="#Search"><span>Search</span></a>
+  <a href="#input"><input type="text" placeholder="Search..."><button>Search</button></a>
+  <a href="#LogIn" ><span class="l">Log In</span></a>
+  <a href="#Sign Up" ><span class="l">Sign Up</span></a>
+</div>
+<hr>
+<!-- End of top nav -->
+<div id="Header">
+<div id="Home" class="tabcontent">
+<h1>MY BOOK STORE</h1> <hr>
+<p>INDIA'S LEADING ONLINE BOOK STORE</p>
+</div>
+
+<div id="About" class="tabcontent">
+<i><b>My_Book_Store</b> is a leading online retailer in India.    <br><hr>
+<b>My_Book_Store</b>  retail platform offers millions of unique 
+product selection at <hr>attractive price. Customers can
+ make best selection from wide range of <hr>  products across  multiple category. </i>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2>24x7 COUSTOMER CARE</h2>
+  <p>INDIA : +91 9992255000</p>
+  <p>coustomer@mybookstore.me</p>
+</div>
+
+<div id="Register" class="tabcontent">
+ 
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+<br><hr>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <br><hr>
+      <button type="submit">Login</button>
+      <label><br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#075f6c')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('About', this, '#075f6c')">About</button>
+<button class="tablink" onclick="openCity('Contact', this, '#075f6c')">Contact</button>
+<button class="tablink" onclick="openCity('Register', this, '#075f6c')">Register</button><hr>
+<hr>  </div>
+<!-- Side Nav Bar -->
+
+
+<div class="sidenav">
+<span class="nav"><b>Indian Languages</b></span><br>
+ <input type="checkbox"><span class="x">Hindi</span><br>
+ <input type="checkbox"><span class="x">English</span><br>
+ <input type="checkbox"><span class="x">Tamil</span><br>
+ <input type="checkbox"><span class="x">Telgu</span><br>
+ <input type="checkbox"><span class="x">Bengali</span><br>
+ <span class="x" style="padding-left: 20px;">See More...</span>
+
+ <br><br><br><br><br>
+
+ <span class="nav"><b>Format</b></span><br>
+ <input type="checkbox"><span class="x">Audiobook</span><br>
+ <input type="checkbox"><span class="x">Board Book</span><br>
+ <input type="checkbox"><span class="x">Bound</span><br>
+ <input type="checkbox"><span class="x">Bundle</span><br>
+ <input type="checkbox"><span class="x">Hardcover</span><br>
+ <input type="checkbox"><span class="x">Kindle eBooks</span><br>
+ <input type="checkbox"><span class="x">Paperback</span><br>
+ <span class="x" style="padding-left: 20px;">See More...</span>
+
+
+ <br><br><br><br><br>
+
+ <span class="nav"><b>Foreign Languages</b></span><br>
+ <input type="checkbox"><span class="x">French</span><br>
+ <input type="checkbox"><span class="x">Albanian</span><br>
+ <input type="checkbox"><span class="x">Spanish</span><br>
+ <input type="checkbox"><span class="x">Italian</span><br>
+ <input type="checkbox"><span class="x">Japanese</span><br>
+ 
+ <span class="x" style="padding-left: 20px;">See More...</span>
+
+
+  <br><br><br><br><br>
+
+ <span class="nav"><b>Price</b></span><br>
+ <input type="checkbox"><span class="x">Under ₹100</span><br>
+ <input type="checkbox"><span class="x">₹100-₹200</span><br>
+ <input type="checkbox"><span class="x">₹200-₹500</span><br>
+ <input type="checkbox"><span class="x">₹500-₹1,000</span><br>
+ <input type="checkbox"><span class="x">Over ₹1,000</span><br>
+ 
+ <span class="x" style="padding-left: 20px;">See More...</span>
+ <br><br><br><br><br>
+  <span class="nav"><b>Discount</b></span><br>
+ <input type="checkbox"><span class="x">10% Off or more</span><br>
+ <input type="checkbox"><span class="x">20% Off or more</span><br>
+ <input type="checkbox"><span class="x">30% Off or more</span><br>
+ <input type="checkbox"><span class="x">40% Off or more</span><br>
+ <input type="checkbox"><span class="x">50% Off or more</span><br>
+ 
+ <span class="x" style="padding-left: 20px;">See More...</span>
+ <br><br><br><br><br>
+
+   <span class="nav"><b>Seller</b></span><br>
+ <input type="checkbox"><span class="x">MUSTRED</span><br>
+ <input type="checkbox"><span class="x">UBSPD</span><br>
+ <input type="checkbox"><span class="x">SPECTRAL</span><br>
+ <input type="checkbox"><span class="x">uRead-shop</span><br>
+ <input type="checkbox"><span class="x">Amazing Buy</span><br>
+ <input type="checkbox"><span class="x">Maharaj</span><br>
+ <input type="checkbox"><span class="x">VNSstores</span><br>
+ 
+ <span class="x" style="padding-left: 20px;">See More...</span>
+ <br><br><br><br><br>
+</div>
+
+<hr>
+<div id="bestseller"><b>BEST SELLER</b></div>
+<br>
+<div id="image">
+  <img class="books" src="BestSeller1.jpg">
+<img class="books" src="BestSeller2.jpg">
+<img class="books" src="BestSeller3.jpg">
+<img class="books" src="New1.jpg">
+<img class="books" src="New2.jpg">
+<img class="books" src="New3.jpg">
+<img class="books" src="R1.jpg">
+<img class="books" src="R2.jpg">
+<img class="books" src="R3.jpg">
+</div><hr><hr>
+<!-- slideshow -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="t5.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="t4.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="t3.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!-- end of slide show -->
+<hr><hr>
+
+<div id="more" style="margin-left: 150px;">
+  <img src="q1.jpg"><b>A Century Is Not Enough</b>
+</div>
+
+<hr><hr>
+
+<div id="more" style="margin-left: 150px;">
+  <img src="q2.jpg"><b>Ashwin Sanghi</b>
+</div>
+
+<hr><hr>
+
+<div id="more" style="margin-left: 150px;">
+  <img src="q3.jpg">
+    <b>The Woman in the Window</b>   
+  
+</div>
+
+<hr><hr>
+
+<div id="more" style="margin-left: 150px;">
+  <img src="q5.jpg"><b>Letters to My Ex</b>
+</div>
+
+<hr><hr>
+
+
+<span id="foot" style="margin-left: 250px;"> <b>INDIA | BRAZIL | CANADA | FRANCE | GERMANY | ITALY | JAPAN | MEXICO | NETHERLANDS | UNITED STATES</b></span>
+
+<div style="margin-left: 250px;">
+<br><br>  <b>CONNECT WITH US</b><p>Facebook</p><p>Twitter</p><p>Istagram</p><hr>
+</div>
+<hr><hr><hr><hr>
+<div class="footer">
+  <p>Conditions of Use & Sale | Privacy Notice | Interest-Based Ads</p>
+</div>
+
+<script>
+function openCity(x,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(x).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+
+// slide show
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+     
+</body>
+</html> 
